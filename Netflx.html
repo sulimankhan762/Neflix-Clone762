@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="Netflix.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="banner-nav">
+            <!-- <h1>Netflix</h1> -->
+            <img src="img/logo.png" alt="">
+        <div id="btn-btn">   
+        <input type="search" name="" id="boxing" placeholder="search">
+        <!-- <select lableid="header-switcher" name="languageselect" id="" data-uai="languag-picker-header">
+            <option>English</option>
+        </select> -->
+        <button id="btn">Sing Out</button>
+        </div>
+        </div>
+         
+        <div id="text-section">
+            <div class="text-heading">
+                <h1>Unlimited movies, TV shows, and more</h1>
+                <p>Start at Rs&nbsp;250. Cancel Anytime.</p>
+                <button>Restart Your Membership <i class="ri-arrow-right-s-line"></i> </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ################## Second Section #################### -->
+    
+    <div class="second_section">
+
+        <div class="heading">
+            <h1>Plans to suit your needs and your budget</h1>
+            <p>Enjoy Netflix starting at just Rs 250.</p>
+        </div>
+
+        <div class="trending">
+        <h2>Trending Now</h2>
+        </div>
+        
+        <div id="trending_now">
+            
+
+            <select name="market" id="suliman">
+                <option label="Pakistan" value="local">Pakistan</option>
+                <option label="Global" value="global">Global</option>
+            </select><select name="content" id="suliman">
+                <option   label="Movies" value="localMovies">Movies</option>
+                <option label="TV Shows" value="localTv">TV Shows</option>
+            </select>
+        </div>
+
+
+
+        <div class="picture-slider-container">
+            <button onclick="onMovieLeft()"><i class="ri-arrow-left-wide-line"></i></button>
+            <div class="pictures-container">
+                <div class="pictures">
+                    <div id="dunki" class="film-pics">
+                        <img src="img/1.jpg" alt="dunki">
+                    </div>
+
+                    <div id="animal" class="film-pics">
+                        <img src="img/2.jpg" alt="animal">
+                    </div>
+
+                    <div id="karam" class="film-pics">
+                        <img src="img/3.jpg" alt="karam">
+                    </div>
+
+                    <div id="bhakshak" class="film-pics">
+                        <img src="img/4.jpg" alt="bhakshak">
+                    </div>
+
+                    <div id="dune" class="film-pics">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+
+                    <div id="mad-max" class="film-pics">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+
+                    <div id="looking" class="film-pics">
+                        <img src="img/7.jpg" alt="">
+                    </div>
+
+                    <div id="lift" class="film-pics">
+                        <img src="img/8.jpg" alt="">
+                    </div>
+
+                    <div id="jawan" class="film-pics">
+                        <img src="img/9.jpg" alt="">
+                    </div>
+
+                    <div id="illumanation" class="film-pics">
+                        <img src="img/10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <button onclick="onMovieRight()"><i class="ri-arrow-right-wide-line"></i></button>
+
+        </div>
+    
+    </div>
+
+    <div class="wrapper-container">
+        <div class="wrapper-heading">
+            <h2>Get More From Your Memebership</h2>
+        </div>
+
+        <div class="wrapper-content">
+            <div class="wrapper-text">
+                <h3>Mobile games now included in every plan</h3>
+                <p>No ads, extra fees, or in-app purchases. Enjoy unlimited access to a growing catalog of popular and exclusive games.</p>
+            </div>
+            <div class="wrapper-img">
+                <img src="img/games-sm.png" alt="">
+            </div>
+        </div>
+    </div>    
+
+   <div class="features">
+    <div class="features-heading">
+        <h2>More Reason to join</h2>
+    </div>
+
+    <div class="features-text-content">
+        <div class="text1" id="features-plan">
+            <p>Stories tailored to you taste</p>
+        </div>
+        <div class="text2" id="features-plan">
+            <p>cancel or switch plans anytime</p>
+        </div>
+        <div class="text3" id="features-plan">
+            <p>A place just for kids</p>
+        </div>
+        <div class="text4" id="features-plan">
+            <p>For your phone,tablet,<br>laptop and TV</p>
+        </div>
+    </div>
+
+   </div>
+
+   <div class="questions">
+    <div class="questions-heading">
+        <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="asked-question">
+        <ul class="questionlist">
+            <li class="list-item"><h3>What is Netflix? <i class="ri-add-line"></i></h3></li>
+            <li class="list-item"><h3>How much does Netflix cost? <i class="ri-add-line"></i></h3></li>
+            <li class="list-item "><h3>Where can i watch? <i class="ri-add-line"></i></h3></li>
+            <li class="list-item"><h3>How do i cancel? <i class="ri-add-line"></i></h3></li>
+            <li class="list-item"><h3>What can i watch on Netflix? <i class="ri-add-line"></i></h3></li>
+            <li class="list-item"><h3>Is Netflix good for kids? <i class="ri-add-line"></i></h3></li>
+        </ul>
+    </div>
+
+
+        <div class="to-watch">
+            <div class="text-h">
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+            </div>
+            <div class="container-towatch">
+            <input type="email" name="email" id="email" placeholder="Email address"> <button class="btn-email" >Get Started<i class="ri-arrow-right-wide-line"></i></button>
+         </div>    
+        </div>
+        
+            
+    </div>
+
+    <div class="footer">
+        <div class="question-contact">
+            <a href=""><h4>Question? Contact us.</h4></a>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Prefrence</a></li>
+                <li><a href="#">Legal Notice</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Carporate Information</a></li>
+                <li><a href="#">Only on Netflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    
+        <select name="Eng" id="languag">
+           <img src="./img/translate-2(1).svg" alt="">
+            <option value="English"> English</option>
+        </select>
+
+        <p class="last-p">Netflix Pakistan</p>
+    </div>
+
+
+ 
+    <script src="javascript.js"></script>
+</body>
+</html>
